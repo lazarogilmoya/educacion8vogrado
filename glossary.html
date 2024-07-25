@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+        
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágene.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos.html">Fondos de página y colores de otros elementos</a>
+                        <a href="Tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Galería de Imágenes</a></li>
+                <li><a href="video.html">galerias de videos</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <!-- Otros elementos del menú -->
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h2>Glosario</h2>
+                <div class="alphabet">
+                    <button onclick="filterGlossary('A')">A</button>
+                    <button onclick="filterGlossary('B')">B</button>
+                    <button onclick="filterGlossary('C')">C</button>
+                    <button onclick="filterGlossary('D')">D</button>
+                    <button onclick="filterGlossary('E')">E</button>
+                    <button onclick="filterGlossary('F')">F</button>
+                    <button onclick="filterGlossary('G')">G</button>
+                    <button onclick="filterGlossary('H')">H</button>
+                    <button onclick="filterGlossary('I')">I</button>
+                    <button onclick="filterGlossary('J')">J</button>
+                    <button onclick="filterGlossary('K')">K</button>
+                    <button onclick="filterGlossary('L')">L</button>
+                    <button onclick="filterGlossary('M')">M</button>
+                    <button onclick="filterGlossary('N')">N</button>
+                    <button onclick="filterGlossary('O')">O</button>
+                    <button onclick="filterGlossary('P')">P</button>
+                    <button onclick="filterGlossary('Q')">Q</button>
+                    <button onclick="filterGlossary('R')">R</button>
+                    <button onclick="filterGlossary('S')">S</button>
+                    <button onclick="filterGlossary('T')">T</button>
+                </div>
+                <div class="glosario-container">
+                    <div class="term" data-letter="A">
+                        <strong>API (Application Programming Interface):</strong> Conjunto de protocolos y herramientas para construir software y aplicaciones.
+                    </div>
+                    <div class="term" data-letter="B">
+                        <strong>Back-end:</strong> Parte del desarrollo web que se encarga de la lógica del servidor, bases de datos y la integración del sistema.
+                    </div>
+                    <div class="term" data-letter="C">
+                        <strong>CSS (Cascading Style Sheets):</strong> Lenguaje de diseño utilizado para describir la presentación de un documento HTML.
+                    </div>
+                    <div class="term" data-letter="D">
+                        <strong>DOM (Document Object Model):</strong> Modelo de programación que permite el acceso y la manipulación del contenido y estructura de los documentos HTML y XML.
+                    </div>
+                    <div class="term" data-letter="E">
+                        <strong>Element:</strong> Cada etiqueta en HTML que define una estructura o contenido.
+                    </div>
+                    <div class="term" data-letter="F">
+                        <strong>Framework:</strong> Conjunto de herramientas y bibliotecas que facilitan el desarrollo de aplicaciones y sistemas.
+                    </div>
+                    <div class="term" data-letter="G">
+                        <strong>GUI (Graphical User Interface):</strong> Interfaz gráfica de usuario que permite la interacción con el software a través de elementos visuales.
+                    </div>
+                    <div class="term" data-letter="H">
+                        <strong>HTML (HyperText Markup Language):</strong> El lenguaje de marcado estándar para crear páginas web.
+                    </div>
+                    <div class="term" data-letter="I">
+                        <strong>IDE (Integrated Development Environment):</strong> Entorno de desarrollo integrado que facilita la programación con herramientas como editores de código, depuradores, y compiladores.
+                    </div>
+                    <div class="term" data-letter="J">
+                        <strong>JavaScript:</strong> Lenguaje de programación utilizado principalmente para crear contenido interactivo en páginas web.
+                    </div>
+                    <div class="term" data-letter="K">
+                        <strong>Keyword:</strong> Palabra clave utilizada en lenguajes de programación y motores de búsqueda.
+                    </div>
+                    <div class="term" data-letter="L">
+                        <strong>Library:</strong> Conjunto de funciones y procedimientos reutilizables en programación.
+                    </div>
+                    <div class="term" data-letter="M">
+                        <strong>Multimedia:</strong> Contenido que utiliza una combinación de diferentes formas de contenido como texto, audio, imágenes, animaciones, video e interactividad.
+                    </div>
+                    <div class="term" data-letter="N">
+                        <strong>Node.js:</strong> Entorno de ejecución para JavaScript en el lado del servidor.
+                    </div>
+                    <div class="term" data-letter="O">
+                        <strong>Open Source:</strong> Software de código abierto que se puede utilizar, modificar y distribuir libremente.
+                    </div>
+                    <div class="term" data-letter="P">
+                        <strong>Protocol:</strong> Conjunto de reglas que determinan cómo se transmiten los datos a través de una red.
+                    </div>
+                    <div class="term" data-letter="Q">
+                        <strong>Query:</strong> Consulta realizada a una base de datos para recuperar información específica.
+                    </div>
+                    <div class="term" data-letter="R">
+                        <strong>Responsive Design:</strong> Diseño web que se adapta automáticamente a diferentes tamaños de pantalla y dispositivos.
+                    </div>
+                    <div class="term" data-letter="S">
+                        <strong>SEO (Search Engine Optimization):</strong> Proceso de mejorar la visibilidad de un sitio web en los motores de búsqueda.
+                    </div>
+                    <div class="term" data-letter="T">
+                        <strong>Tag:</strong> Marcador en HTML que define elementos en un documento, por ejemplo, <div>.
+                    </div>
+                    <div class="term" data-letter="U">
+                        <strong>URL (Uniform Resource Locator):</strong> Dirección de una página web.
+                    </div>
+                    <div class="term" data-letter="V">
+                        <strong>Viewport:</strong> Área visible de una página web en una pantalla o dispositivo.
+                    </div>
+                    <div class="term" data-letter="W">
+                        <strong>Web Server:</strong> Computadora que almacena y entrega páginas web a través de Internet.
+                    </div>
+                    <div class="term" data-letter="X">
+                        <strong>XML (eXtensible Markup Language):</strong> Lenguaje de marcado utilizado para almacenar y transportar datos.
+                    </div>
+                    <div class="term" data-letter="Y">
+                        <strong>YAML (YAML Ain't Markup Language):</strong> Lenguaje de serialización de datos fácil de leer, utilizado para la configuración de aplicaciones.
+                    </div>
+                    <div class="term" data-letter="Z">
+                        <strong>Z-index:</strong> Propiedad en CSS que especifica el orden de apilamiento de los elementos en una página web.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

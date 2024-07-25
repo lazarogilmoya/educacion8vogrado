@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserción de Enlaces, Hipervínculos o Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágene.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos.html">Fondos de página y colores de otros elementos</a>
+                        <a href="tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+             
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Inserción de Enlaces, Hipervínculos o Links</h1>
+                <p>En HTML, los enlaces o hipervínculos permiten conectar una página web con otras páginas, documentos o recursos en la web. Los enlaces se crean utilizando la etiqueta `<a>`. A continuación, se explica cómo insertar enlaces y algunos atributos útiles:</p>
+                
+                <h2>1. Crear un Enlace Básico</h2>
+                <p>Para crear un enlace básico, se utiliza la etiqueta `<a>` con el atributo `href`, que especifica la URL de destino:</p>
+                <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Visita Ejemplo&lt;/a&gt;</code></pre>
+                <p>En este caso, al hacer clic en "Visita Ejemplo", el usuario será redirigido a <a href="https://www.ejemplo.com" target="_blank">www.ejemplo.com</a>.</p>
+                
+                <h2>2. Enlaces a Páginas Internas</h2>
+                <p>Para enlazar a otras páginas dentro del mismo sitio web, se utiliza la ruta relativa:</p>
+                <pre><code>&lt;a href="pagina_interna.html"&gt;Ir a Página Interna&lt;/a&gt;</code></pre>
+                
+                <h2>3. Abrir Enlaces en una Nueva Ventana</h2>
+                <p>Para que un enlace se abra en una nueva ventana o pestaña, se usa el atributo `target` con el valor `_blank`:</p>
+                <pre><code>&lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abrir en nueva ventana&lt;/a&gt;</code></pre>
+                
+                <h2>4. Enlaces a Correo Electrónico</h2>
+                <p>Para crear un enlace que abra el cliente de correo electrónico del usuario, se utiliza el protocolo `mailto:`:</p>
+                <pre><code>&lt;a href="mailto:correo@ejemplo.com"&gt;Enviar correo&lt;/a&gt;</code></pre>
+                
+                <h2>5. Enlaces a Teléfonos</h2>
+                <p>Para crear un enlace que permita realizar una llamada telefónica desde dispositivos compatibles, se usa el protocolo `tel:`:</p>
+                <pre><code>&lt;a href="tel:+123456789"&gt;Llamar al +123456789&lt;/a&gt;</code></pre>
+                
+                <h2>6. Enlaces Ancla</h2>
+                <p>Los enlaces ancla permiten enlazar a una sección específica dentro de la misma página. Se usa el atributo `id` en el elemento de destino y el carácter `#` en el enlace:</p>
+                <pre><code>&lt;a href="#seccion1"&gt;Ir a Sección 1&lt;/a&gt;
+&lt;h2 id="seccion1"&gt;Sección 1&lt;/h2&gt;</code></pre>
+                
+                <h2>7. Enlaces con Imagen</h2>
+                <p>También se pueden usar imágenes como enlaces. La etiqueta `<img>` se coloca dentro de la etiqueta `<a>`:</p>
+                <pre><code>&lt;a href="https://www.ejemplo.com"&gt;
+    &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+&lt;/a&gt;</code></pre>
+                
+                <h2>8. Enlaces de Descarga</h2>
+                <p>Para proporcionar un enlace de descarga a un archivo, se utiliza el atributo `download`:</p>
+                <pre><code>&lt;a href="archivo.pdf" download="nombre_archivo.pdf"&gt;Descargar PDF&lt;/a&gt;</code></pre>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

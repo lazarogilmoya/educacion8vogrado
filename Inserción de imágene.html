@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserción de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="navegador url.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágene.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos.html">Fondos de página y colores de otros elementos</a>
+                        <a href="tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Inserción de Imágenes</h1>
+                <p>En HTML, puedes insertar imágenes en tus páginas web utilizando la etiqueta <code>&lt;img&gt;</</code>. La etiqueta <code>&lt;img&gt;</</code> no tiene una etiqueta de cierre y se usa junto con los atributos <code>src</code> y <code>alt</code>.</p>
+                
+                <h2>1. Estructura Básica</h2>
+                <p>Para insertar una imagen, utiliza el siguiente código HTML:</p>
+                <pre><code>&lt;img src="ruta/a/tu/imagen.jpg" alt="Descripción de la imagen"&gt;</code></pre>
+                <p>Donde <code>src</code> especifica la ruta del archivo de imagen y <code>alt</code> proporciona una descripción alternativa para la imagen.</p>
+                
+                <h2>2. Atributos de la Etiqueta <code>&lt;img&gt;</code></h2>
+                <ul>
+                    <li><strong>src:</strong> Especifica la ubicación del archivo de imagen.</li>
+                    <li><strong>alt:</strong> Proporciona un texto alternativo que describe la imagen para usuarios que no pueden verla.</li>
+                    <li><strong>width:</strong> Define el ancho de la imagen en píxeles.</li>
+                    <li><strong>height:</strong> Define la altura de la imagen en píxeles.</li>
+                    <li><strong>title:</strong> Muestra un texto emergente cuando el usuario pasa el cursor sobre la imagen.</li>
+                </ul>
+                
+                <h2>3. Ejemplos de Inserción de Imágenes</h2>
+                
+                <h3>Imagen con Texto Alternativo</h3>
+                <p>Este es un ejemplo de una imagen con una descripción alternativa:</p>
+                <pre><code>&lt;img src="assets/example1.jpg" alt="Una imagen de ejemplo"&gt;</code></pre>
+                
+                <h3>Imagen con Tamaño Definido</h3>
+                <p>También puedes definir el tamaño de la imagen:</p>
+                <pre><code>&lt;img src="assets/example2.jpg" alt="Una imagen con tamaño definido" width="300" height="200"&gt;</code></pre>
+                
+                <h3>Imagen con Título</h3>
+                <p>Agrega un título que aparece al pasar el cursor:</p>
+                <pre><code>&lt;img src="assets/example3.jpg" alt="Imagen con título" title="Este es un título de la imagen"&gt;</code></pre>
+                
+                <h2>4. Buenas Prácticas</h2>
+                <ul>
+                    <li>Asegúrate de que las imágenes tengan un texto alternativo descriptivo para accesibilidad.</li>
+                    <li>Optimiza las imágenes para la web para mejorar el tiempo de carga.</li>
+                    <li>Utiliza rutas relativas o absolutas adecuadas para la ubicación de tus imágenes.</li>
+                    <li>Considera usar formatos modernos como WebP para mejorar la calidad y reducir el tamaño del archivo.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

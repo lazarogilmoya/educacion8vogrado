@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos de Página y Colores de Otros Elementos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="ariantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágene.html">Inserción de imágenes</a>
+                        <a href="alineacion_y_dimensionado_de_imagenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Fondos de página y colores de otros elementos</a>
+                        <a href="tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+             
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Fondos de Página y Colores de Otros Elementos</h1>
+                <p>En el diseño web, los fondos y colores juegan un papel crucial en la apariencia y usabilidad de una página. Aquí se explican cómo aplicar fondos y colores utilizando CSS.</p>
+                
+                <h2>1. Aplicar Fondos a la Página</h2>
+                <p>Para aplicar un fondo a toda la página, puedes utilizar la propiedad <code>background</code> en el selector <code>body</code>:</p>
+                <pre><code>body {
+    background-color: #f0f0f0; /* Color de fondo */
+    background-image: url('path/to/background-image.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen de fondo */
+}</code></pre>
+                <p>Esto permite que la página tenga un color de fondo sólido, una imagen o ambos.</p>
+                
+                <h2>2. Colores de Fondo en Elementos Específicos</h2>
+                <p>Para aplicar un color de fondo a elementos específicos como <code>div</code>, <code>header</code>, o <code>footer</code>, utiliza la propiedad <code>background-color</code>:</p>
+                <pre><code>.header {
+    background-color: #4CAF50; /* Color de fondo verde */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: #fff; /* Color del texto en blanco */
+}</code></pre>
+                
+                <h2>3. Colores de Texto y Otros Elementos</h2>
+                <p>Para definir el color del texto, utiliza la propiedad <code>color</code>. También puedes aplicar colores a bordes, enlaces y otros elementos:</p>
+                <pre><code>p {
+    color: #333; /* Color del texto */
+}
+
+a {
+    color: #1E90FF; /* Color de los enlaces */
+}
+
+a:hover {
+    color: #FF4500; /* Color de los enlaces al pasar el cursor */
+}
+
+button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+}</code></pre>
+                
+                <h2>4. Ejemplos Prácticos</h2>
+                
+                <h3>Fondo con Color</h3>
+                <p>Aplicando un color de fondo sólido a un <code>div</code>:</p>
+                <pre><code>&lt;div class="color-fondo"&gt;
+    Este es un <code>div</code> con un fondo de color.
+&lt;/div&gt;</code></pre>
+                <pre><code>.color-fondo {
+    background-color: #ffcccb; /* Color de fondo rosa claro */
+    padding: 20px; /* Espaciado interno */
+}</code></pre>
+                
+                <h3>Fondo con Imagen</h3>
+                <p>Aplicando una imagen de fondo a un <code>div</code>:</p>
+                <pre><code>&lt;div class="imagen-fondo"&gt;
+    Este es un <code>div</code> con una imagen de fondo.
+&lt;/div&gt;</code></pre>
+                <pre><code>.imagen-fondo {
+    background-image: url('assets/background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajustar imagen */
+    background-position: center; /* Centrar imagen */
+    height: 300px; /* Altura del <code>div</code> */
+    color: #fff; /* Color del texto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}</code></pre>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

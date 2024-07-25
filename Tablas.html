@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágenes.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos.html">Fondos de página y colores de otros elementos</a>
+                        <a href="tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+               
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Tablas en HTML</h1>
+                <p>Las tablas en HTML se utilizan para presentar datos tabulares. Se componen de filas (<code>&lt;tr&gt;</code>), celdas de encabezado (<code>&lt;th&gt;</code>) y celdas de datos (<code>&lt;td&gt;</code>). A continuación, se muestra un ejemplo de cómo crear y estilizar una tabla:</p>
+                
+                <h2>Ejemplo de Tabla</h2>
+                <table>
+                    <caption>Ejemplo de Tabla</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Ciudad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>25</td>
+                            <td>Madrid</td>
+                        </tr>
+                        <tr>
+                            <td>Maria García</td>
+                            <td>30</td>
+                            <td>Barcelona</td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Martínez</td>
+                            <td>28</td>
+                            <td>Valencia</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Explicación de la Tabla</h2>
+                <ul>
+                    <li><code>&lt;table&gt;</code>: Define una tabla.</li>
+                    <li><code>&lt;thead&gt;</code>: Agrupa los encabezados de la tabla.</li>
+                    <li><code>&lt;tbody&gt;</code>: Agrupa el cuerpo de la tabla.</li>
+                    <li><code>&lt;tr&gt;</code>: Define una fila en la tabla.</li>
+                    <li><code>&lt;th&gt;</code>: Define una celda de encabezado (se muestra en negrita y centrada por defecto).</li>
+                    <li><code>&lt;td&gt;</code>: Define una celda de datos.</li>
+                </ul>
+
+                <h2>Estilización de Tablas</h2>
+                <p>Las tablas se pueden estilizar con CSS para mejorar su apariencia. A continuación, se muestra un ejemplo básico de estilización:</p>
+                <pre><code>table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}</code></pre>
+                <p>Este código CSS aplica un estilo simple a las tablas, incluyendo bordes, espaciado y colores alternos para las filas.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

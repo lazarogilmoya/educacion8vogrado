@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágene.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos">Fondos de página y colores de otros elementos</a>
+                        <a href="Tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+            </ul>
+        </aside>
+        <main>
+           
+            <section class="content">
+                <h2>Galería de Imágenes</h2>
+                <div class="gallery">
+                    <img src="assets/image1.jpg"  alt="Imagen 1" class="gallery-image">
+                    <img src="assets/image2.jpg"  alt="Imagen 2" class="gallery-image">
+                    <img src="assets/image3.jpg"  alt="Imagen 3" class="gallery-image">
+                    <img src="assets/image5.jpeg"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image6.jpeg"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image7.jpeg"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image8.jpg"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image9.jpg"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image10.png"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image11.png"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image12.png"  alt="Imagen 4" class="gallery-image">
+                    <img src="assets/image13.jpg"  alt="Imagen 4" class="gallery-image">
+
+                    <!-- Añade más imágenes según sea necesario -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Modal para mostrar la imagen en tamaño real -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>

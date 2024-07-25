@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegador URL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="banner-gif" src="img.gif" alt="Banner GIF">
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>
+                    <button class="dropdown-btn">La Web como servicio fundamental de Internet</button>
+                    <div class="dropdown-container">
+                        <a href="Concepto de sitio Web.html">Concepto de sitio Web</a>
+                        <a href="Navegador URL.html">Navegador URL</a>
+                        <a href="Variantes para la construcción de un sitio Web.html">Variantes para la construcción de un sitio Web</a>
+                        <a href="Diseño de un sitio Web.html">Diseño de un sitio Web</a>
+                        <a href="Estructura básica de una página Web.html">Estructura básica de una página Web</a>
+                        <a href="El texto y sus códigos más importantes.html">El texto y sus códigos más importantes</a>
+                    </div>
+                </li>
+                <li>
+                    <button class="dropdown-btn">Multimedia en la página Web</button>
+                    <div class="dropdown-container">
+                        <a href="Inserción de enlaces, hipervínculos o links.html">Inserción de enlaces, hipervínculos o links</a>
+                        <a href="Inserción de imágenes.html">Inserción de imágenes</a>
+                        <a href="Alineación y dimensionado de imágenes.html">Alineación y dimensionado de imágenes</a>
+                        <a href="Fondos de página y colores de otros elementos.html">Fondos de página y colores de otros elementos</a>
+                        <a href="tablas.html">Tablas</a>
+                        <a href="Contenidos multimedia en páginas Web.html">Contenidos multimedia en páginas Web</a>
+                    </div>
+                </li>
+                <li><a href="glossary.html">Glosario</a></li>
+                <li><a href="video.html">Galeria de videos</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+           
+            </ul>
+        </aside>
+        <main>
+            <section class="content">
+                <h1>Navegador URL</h1>
+                <p>El navegador URL es la parte de la barra de direcciones del navegador web donde se introduce una URL (Uniform Resource Locator) para acceder a una página web específica. La URL es una dirección web que apunta a una página en particular o a un recurso en Internet.</p>
+                
+                <h2>Desglose de la URL</h2>
+                <p>Una URL típica tiene varias partes, cada una con una función específica:</p>
+                <ul>
+                    <li><strong>Protocolo:</strong> Indica el método de acceso al recurso. Los más comunes son <code>http</code> y <code>https</code>.
+                        <ul>
+                            <li>Ejemplo: <code>https://</code></li>
+                        </ul>
+                    </li>
+                    <li><strong>Nombre de dominio:</strong> La dirección del servidor donde se encuentra el recurso.
+                        <ul>
+                            <li>Ejemplo: <code>www.ejemplo.com</code></li>
+                        </ul>
+                    </li>
+                    <li><strong>Ruta del recurso:</strong> La ruta específica dentro del servidor que lleva al recurso deseado.
+                        <ul>
+                            <li>Ejemplo: <code>/ruta/al/recurso</code></li>
+                        </ul>
+                    </li>
+                    <li><strong>Parámetros de consulta:</strong> (opcional) Información adicional enviada al servidor.
+                        <ul>
+                            <li>Ejemplo: <code>?parametro1=valor1&amp;parametro2=valor2</code></li>
+                        </ul>
+                    </li>
+                    <li><strong>Fragmento:</strong> (opcional) Una referencia a una sección específica dentro de la página.
+                        <ul>
+                            <li>Ejemplo: <code>#seccion1</code></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>Ejemplo de URL Completa</h2>
+                <p><code>https://www.ejemplo.com/ruta/al/recurso?parametro1=valor1&amp;parametro2=valor2#seccion1</code></p>
+                
+                <h2>Importancia del Navegador URL</h2>
+                <ul>
+                    <li><strong>Acceso Directo:</strong> Permite acceder directamente a páginas web específicas.</li>
+                    <li><strong>Navegación:</strong> Facilita la navegación entre diferentes secciones de un sitio web.</li>
+                    <li><strong>Seguridad:</strong> Indicadores de seguridad (como el candado en <code>https</code>) informan al usuario sobre la seguridad de la conexión.</li>
+                </ul>
+                
+                <h2>Navegador URL en la Práctica</h2>
+                <p>Cuando escribes una URL en el navegador y presionas Enter, el navegador realiza una serie de pasos:</p>
+                <ul>
+                    <li><strong>Resolución DNS:</strong> Traduce el nombre de dominio a una dirección IP.</li>
+                    <li><strong>Solicitud HTTP/HTTPS:</strong> Envía una solicitud al servidor web en la dirección IP obtenida.</li>
+                    <li><strong>Respuesta del Servidor:</strong> El servidor responde con los datos de la página web.</li>
+                    <li><strong>Renderización:</strong> El navegador procesa los datos y muestra la página web al usuario.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Educación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
